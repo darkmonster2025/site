@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <style>
+      .div1 {
+        width: 20px;
+        height: 20px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="text" id="i1" />
+    <button onclick="f1()">Click</button>
+    <div class="d1"></div>
+    <script>
+      const d1 = document.querySelector(".d1");
+      function f1() {
+        d1.innerHTML = ''
+        for (let i = 0; i < Math.min(5, i1.value); i++) {
+           d1.innerHTML += "<div class=div1></div>";
+        }
+      }
+    </script>
+  </body>
+</html>
